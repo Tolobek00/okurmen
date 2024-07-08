@@ -1,0 +1,144 @@
+@import "../../Styles/mixin";
+
+.polygon-container {
+
+  background: rgba(25, 26, 38, 0.4), rgba(142, 53, 255, 0.3);
+  backdrop-filter: blur(30px);
+  @include flexbox(center, center);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+  @include respond-to-small {
+    width: 425px;
+    margin: 0 auto;
+    height: 1000vh;
+  }
+
+  
+
+  .polygon {
+    padding-top: 25px;
+    background: url("../../Assets/image/Polygon\ full.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 580px;
+    height: 660px;
+    @include flexbox(flex-start, center);
+    gap: 30px;
+    flex-direction: column;
+    @include respond-to-small {
+      width: 320px;
+      height: 452px;
+      top: 0;
+      left: 0
+    }
+
+    .avatar-name {
+      @include flexbox(space-between, center);
+      gap: 15px;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      h1 {
+        color: rgb(25, 26, 38);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 700;
+        // line-height: 20px;
+        // letter-spacing: -1%;
+        text-align: center;
+      }
+    }
+    .title-polygon {
+      h1 {
+        color: rgb(25, 26, 38);
+        font-family: Roboto Flex;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 100%;
+        letter-spacing: -1%;
+        text-align: left;
+        text-transform: uppercase;
+      }
+    }
+    div {
+      @include flexbox(space-between, center);
+      width: 206px;
+      height: 32px;
+      section:first-child {
+        @include flexbox(center, center);
+        border-radius: 48px;
+        background: rgb(245, 248, 250);
+        width: 105px;
+        height: 32px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      section:hover:first-child {
+        background: radial-gradient(
+          115% 168% at 50% -52%,
+          rgb(243, 109, 255),
+          rgb(135, 69, 254) 60.5%,
+          rgb(23, 186, 229) 100%
+        );
+        color: white;
+      }
+      section:nth-child(2) {
+        @include flexbox(center, center);
+        width: 105px;
+        height: 32px;
+      }
+    }
+    .button {
+      transition: 0.3s;
+      @include flexbox(center, center);
+      //   box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 99999px;
+      background: radial-gradient(
+        115% 168% at 50% -52%,
+        rgb(243, 109, 255),
+        rgb(135, 69, 254) 60.5%,
+        rgb(23, 186, 229) 100%
+      );
+      width: 190px;
+      height: 48px;
+      button {
+        color: rgb(255, 255, 255);
+        background: none;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -1%;
+        text-align: center;
+        text-transform: uppercase;
+        width: 180px;
+        height: 38px;
+        border-radius: 99999px;
+      }
+    }
+    .button:hover button {
+      border: 1px solid white;
+      transition: 0.3s;
+    }
+    .remove {
+      @include flexbox(center, center);
+      box-sizing: border-box;
+      border: 1px solid rgb(222, 227, 232);
+      border-radius: 99999px;
+      background: rgb(255, 255, 255);
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .remove:hover {
+      border: 1px solid rgb(135, 69, 254);
+    }
+  }
+}

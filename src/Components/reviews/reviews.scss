@@ -1,0 +1,155 @@
+@import "../../Styles/mixin";
+
+.reviews {
+  width: 1440px;
+  margin: 0 auto;
+  @include respond-to-extra-large {
+    max-width: 1100px;
+  }
+  @include respond-to-large {
+    max-width: 768px;
+  }
+  @include respond-to-medium {
+    max-width: 700px;
+  }
+  @include respond-to-small {
+    max-width: 460px;
+    margin: 0 auto;
+    // margin-bottom: 50px;
+    // height: 116px;
+  }
+  .title {
+    width: 100%;
+    height: 250px;
+    @include flexbox(center, center);
+    h1 {
+      margin-bottom: -55px;
+      color: rgb(25, 26, 38);
+      font-family: Roboto Flex;
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 120%;
+      letter-spacing: -1%;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  .review-blogs {
+    @include flexbox(space-between, center);
+    gap: 25px;
+    transition: 0.7s;
+
+    @include respond-to-small {
+      overflow-y: hidden;
+      white-space: nowrap;
+    }
+
+    .blog {
+      width: 420px;
+      height: 479px;
+      padding: 40px 64px 80px 64px;
+      // border: 1px solid black;
+      text-align: center;
+      border-radius: 20px;
+      position: relative;
+      background: url("../../Assets/image/Polygon\ full.png");
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: 0.3s;
+      @include respond-to-small {
+        @include flexbox(center, center);
+        flex-direction: column;
+        width: 360px;
+        height: 370px;
+      }
+      // clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      // border-radius: 100px;
+
+      img {
+        margin-bottom: 25px;
+        max-width: 100px;
+        max-height: 100px;
+        transition: 0.3s;
+
+        @include respond-to-small {
+          width: 64px;
+          height: 64px;
+        }
+      }
+      p {
+        color: rgb(25, 26, 38);
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -1%;
+        text-align: center;
+        transition: 0.3s;
+        @include respond-to-small {
+          white-space: wrap;
+
+          @include respond-to-small {
+            color: rgb(25, 26, 38);
+            font-family: Inter;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 14px;
+            width: 200px;
+            letter-spacing: -1%;
+            text-align: center;
+          }
+        }
+      }
+      h3 {
+        color: rgb(142, 53, 255);
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: -1%;
+        text-align: center;
+        transition: 0.3s;
+        @include respond-to-small {
+          font-size: 14px;
+        }
+      }
+      h5 {
+        color: rgb(139, 142, 154);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: -1%;
+        text-align: center;
+        transition: 0.3s;
+        @include respond-to-small {
+          font-size: 12px;
+        }
+      }
+    }
+    .blog:hover {
+      // background: radial-gradient(
+      //   115% 168% at 50% -52%,
+      //   rgb(243, 109, 255),
+      //   rgb(135, 69, 254) 60.5%,
+      //   rgb(23, 186, 229) 100%
+      // );
+      // background: url("../../Assets/Svg/STROKE.svg");
+      background: url("../../Assets/image/Hexagon_Polygon.png");
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      // clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      transition: 0.3s;
+    }
+    .blog:hover img {
+      transform: scale(0.9);
+    }
+    .blog:hover h5,
+    .blog:hover p,
+    .blog:hover h3 {
+      // color: white;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../Styles/mixin";
+
+.comments {
+  .reviews_h1 {
+    color: rgb(25, 26, 38);
+    font-family: Roboto Flex;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 100px;
+    letter-spacing: -1%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .comments_blog {
+    @include flexbox(space-between, center);
+    gap: 10px;
+    overflow: hidden;
+    white-space: hidden;
+    flex-wrap: nowrap;
+
+    .section_comment {
+      @include flexbox(flex-start, flex-start);
+      flex-direction: column;
+      padding: 20px 0 0 25px;
+      gap: 28px;
+      box-sizing: border-box;
+      border: 1px solid rgb(222, 227, 232);
+      border-radius: 20px;
+      background: rgb(255, 255, 255);
+      width: 416px;
+      height: 280px;
+
+      div:first-child {
+        @include flexbox(flex-start, center);
+        gap: 25px;
+      }
+      div:nth-child(2) {
+        p {
+          width: 368px;
+          height: 96px;
+          color: rgb(25, 26, 38);
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: -1%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,267 @@
+@import "../../../Styles/mixin";
+
+.login {
+  @include flexbox(center, center);
+
+  .animation {
+    width: 720px;
+    height: 700px;
+    background: rgb(25, 26, 38);
+    @include flexbox(center, center);
+  }
+  .container {
+    position: relative;
+    // background: white;
+    padding: 15px;
+    width: 400px;
+    height: 400px;
+    // background-color: antiquewhite;
+  }
+  
+  .square {
+    border-radius: 20px;
+    width: 180px;
+    height: 180px;
+    background: rgb(32, 33, 47);
+    position: absolute;
+    transition: opacity 0.2s;
+  }
+  
+  #square1 {
+    top: 10px;
+    left: 10px;
+  }
+  
+  #square2 {
+    top: 10px;
+    right: 10px;
+  }
+  
+  #square3 {
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  #square4 {
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  .hexagon {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    // top: 70px;
+    // left: 70px;
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    transition: transform .4s, top .4s, left .4s, background-color .4s;
+  }
+  
+  .register {
+    margin-top: 25px;
+    width: 720px;
+    height: 700px;
+
+    .title {
+      width: 688px;
+      margin: 0 auto;
+      @include flexbox(space-between, center);
+
+      section:nth-child(1) {
+        @include flexbox(center, center);
+        gap: 15px;
+        cursor: pointer;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      section:nth-child(2) {
+        @include flexbox(center, center);
+        box-sizing: border-box;
+        border: 1px solid rgb(222, 227, 232);
+        border-radius: 99999px;
+        background: rgb(255, 255, 255);
+        width: 162px;
+        height: 48px;
+        transition: 0.3s;
+
+        button {
+          background: none;
+          border-radius: 99999px;
+          width: 150px;
+          height: 38px;
+          color: rgb(25, 26, 38);
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: -1%;
+          text-align: center;
+          text-transform: uppercase;
+          transition: 0.3s;
+        }
+
+        button:hover {
+          border: 2px solid white;
+          color: white;
+        }
+      }
+
+      .register-btn:hover {
+        background: radial-gradient(
+          115% 168% at 50% -52%,
+          rgb(243, 109, 255),
+          rgb(135, 69, 254) 60.5%,
+          rgb(23, 186, 229) 100%
+        );
+      }
+      h1 {
+        color: rgb(25, 26, 38);
+        font-family: Roboto Flex;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 120%;
+        letter-spacing: -1%;
+        text-align: center;
+
+      }
+    }
+
+    .register-container {
+      width: 688px;
+      height: 654px;
+      @include flexbox(center, center);
+      flex-direction: column;
+      margin: 0 auto;
+
+      .login-register {
+        height: 100px;
+        @include flexbox(center, center);
+      }
+
+      .register-title {
+        color: rgb(25, 26, 38);
+        font-family: Roboto Flex;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 100%;
+        letter-spacing: -1%;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      .section {
+        width: 560px;
+        height: 340px;
+        @include flexbox(space-between, center);
+        flex-direction: column;
+        // gap: 30px;
+
+        input {
+          border-radius: 99999px;
+          background: rgb(245, 248, 250);
+          width: 560px;
+          height: 60px;
+          padding-left: 45px;
+          border: 1px solid rgb(135, 69, 254);
+        }
+
+        .eye {
+          position: absolute;
+          right: 15px;
+          bottom: 105px;
+        }
+
+        .button-div {
+          @include flexbox(center, center);
+          box-sizing: border-box;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          border-radius: 99999px;
+          background: radial-gradient(
+            115% 168% at 50% -52%,
+            rgb(243, 109, 255),
+            rgb(135, 69, 254) 60.5%,
+            rgb(23, 186, 229) 100%
+          );
+          width: 560px;
+          height: 60px;
+        }
+
+        button {
+          background: none;
+          color: rgb(255, 255, 255);
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 24px;
+          letter-spacing: -1%;
+          text-align: center;
+          text-transform: uppercase;
+          width: 550px;
+          height: 50px;
+          border-radius: 99999px;
+          box-sizing: border-box;
+          transition: 0.5s;
+        }
+
+        button:hover {
+          border: 1px solid white;
+        }
+
+        section {
+          width: 560px;
+          height: 48px;
+          box-sizing: border-box;
+          border: 1px solid rgb(222, 227, 232);
+          border-radius: 99999px;
+          background: rgb(255, 255, 255);
+          @include flexbox(center, center);
+          gap: 25px;
+        }
+
+        .inputs {
+          @include flexbox(center, center);
+          flex-direction: column;
+          gap: 25px;
+          position: relative;
+
+          .input-checkbox {
+            @include flexbox(Flex-start, center);
+            width: 100%;
+            height: 60px;
+            gap: 25px;
+            input {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+            }
+            span {
+              font-family: Inter;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 20px;
+              letter-spacing: -1%;
+              text-align: left;
+              color: rgb(142, 53, 255);
+
+              h4 {
+                color: rgb(139, 142, 154);
+              }
+            }
+          }
+          .input_password {
+            position: relative;
+            .show-password-btn {
+              position: absolute;
+              right: 20px;
+              top: 18px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

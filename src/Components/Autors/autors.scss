@@ -1,0 +1,174 @@
+@import "../../Styles/mixin";
+
+.autors {
+  @include respond-to-extra-large {
+    max-width: 1100px;
+  }
+  @include respond-to-large {
+    max-width: 768px;
+  }
+  @include respond-to-medium {
+    max-width: 700px;
+  }
+  @include respond-to-small {
+    max-width: 460px;
+  }
+  width: 1280px;
+  .title {
+    height: 150px;
+
+    @include flexbox(Flex-start, center);
+    h1 {
+      margin-top: 35px;
+      color: rgb(25, 26, 38);
+      font-family: Roboto Flex;
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 120%;
+      letter-spacing: -1%;
+      text-align: left;
+      text-transform: uppercase;
+
+      @include respond-to-small {
+        color: rgb(25, 26, 38);
+        font-family: Roboto Flex;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 120%;
+        letter-spacing: -1%;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .autor-blogs {
+    @include flexbox(space-between, center);
+
+    @include respond-to-medium {
+      flex-wrap: wrap;
+    }
+
+    @include respond-to-small {
+      flex-direction: column;
+      gap: 10px;
+    }
+    section {
+      width: 416px;
+      height: 168px;
+      box-sizing: border-box;
+      border: 1px solid rgb(222, 227, 232);
+      border-radius: 20px;
+      background: rgb(255, 255, 255);
+      @include flexbox(space-between, Flex-start);
+      flex-direction: column;
+      padding: 20px 0 20px 30px;
+      transition: 0.2s;
+      .user {
+        @include flexbox(Flex-start, center);
+        gap: 15px;
+        h1 {
+          color: rgb(25, 26, 38);
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 28px;
+          letter-spacing: -1%;
+          text-align: left;
+        }
+      }
+
+      .text {
+        @include flexbox(Flex-start, Flex-start);
+        gap: 15px;
+        div {
+          transition: .5s;
+          h2 {
+            color: rgb(25, 26, 38);
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: -1%;
+            text-align: left;
+            margin-bottom: -1px;
+            transition: .3s;
+          }
+        }
+
+        div:nth-child(1) {
+          border-radius: 48px;
+          background: rgb(245, 248, 250);
+          width: 88px;
+          height: 32px;
+          @include flexbox(center, center);
+        }
+        div:nth-child(2) {
+          border-radius: 48px;
+          background: rgb(245, 248, 250);
+          width: 63px;
+          height: 32px;
+          @include flexbox(center, center);
+        }
+        div:hover {
+          background: radial-gradient(
+            115% 168% at 50% -52%,
+            rgb(243, 109, 255),
+            rgb(135, 69, 254) 60.5%,
+            rgb(23, 186, 229) 100%
+          );
+          cursor: pointer;
+        }
+        div:hover h2 {
+          color: white;
+        }
+      }
+    }
+    .blog1 {
+      .user {
+        div {
+          @include flexbox(center, center);
+          background: url("../../Assets/Svg/STROKE.svg");
+          background-repeat: no-repeat;
+          object-fit: cover;
+          background-size: cover;
+          width: 64px;
+          height: 70px;
+          visibility: hidden;
+          transition: 0.3s;
+          img {
+            visibility: visible;
+          }
+        }
+      }
+    }
+    .blog1:hover div {
+      position: center;
+      @include flexbox(center, center);
+      visibility: visible;
+    }
+    .blog1:hover img {
+      transform: scale(0.9);
+    }
+    section {
+      transition: 0.3s;
+      img {
+        transition: 0.3s;
+      }
+    }
+    section:hover {
+      border-bottom: 1px solid rgb(23, 186, 229);
+      border-top: 1px solid rgb(135, 69, 254);
+      border-right: 1px solid rgb(135, 69, 254);
+      border-left: 1px solid rgb(243, 109, 255);
+    }
+    // section:hover img {
+    //   transform: scale(0.9);
+    //   border-bottom: 3px solid rgb(23, 186, 229);
+    //   border-top: 3px solid rgb(135, 69, 254);
+    //   border-right: 3px solid rgb(135, 69, 254);
+    //   border-left: 3px solid rgb(243, 109, 255);
+    //   clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    //   border-radius: 50%;
+    // }
+  }
+}

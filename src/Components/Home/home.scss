@@ -1,0 +1,15 @@
+.home {
+    background-image: url("../../Assets//image//PATTERN\ BACK.png");
+    position: relative;
+
+    .polygon_2 {
+        border: 2px solid blue;
+                                                        
+        .polygon_absolute {
+            position: absolute;
+            top: 0;
+            z-index: 999;
+            visibility: hidden;
+        }
+    }
+}

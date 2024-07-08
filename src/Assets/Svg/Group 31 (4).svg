@@ -1,0 +1,38 @@
+<svg width="112.281250" height="121.750000" viewBox="0 0 112.281 121.75" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_846_34049_dd" x="0.000000" y="0.000000" width="112.281250" height="121.750000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="4" dy="4"/>
+			<feGaussianBlur stdDeviation="6.83333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.051 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<clipPath id="clip846_34050">
+			<rect id="Frame" width="24.000000" height="24.000000" transform="translate(40.140625 44.875000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<radialGradient gradientTransform="translate(52.1406 56.875) rotate(90) scale(50 50)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_angular_846_34048_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#8E36FE"/>
+			<stop offset="1.000000" stop-color="#8E36FE" stop-opacity="0.400000"/>
+		</radialGradient>
+	</defs>
+	<path id="Polygon 13" d="M48.14 9.18L12.83 29.56C10.36 30.99 8.83 33.63 8.83 36.49L8.83 77.25C8.83 80.11 10.36 82.75 12.83 84.18L48.14 104.56C50.61 105.99 53.66 105.99 56.14 104.56L91.44 84.18C93.91 82.75 95.44 80.11 95.44 77.25L95.44 36.49C95.44 33.63 93.91 30.99 91.44 29.56L56.14 9.18C53.66 7.75 50.61 7.75 48.14 9.18Z" fill="url(#paint_angular_846_34048_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<path id="Polygon 13" d="M12.83 29.56C10.36 30.99 8.83 33.63 8.83 36.49L8.83 77.25C8.83 80.11 10.36 82.75 12.83 84.18L48.14 104.56C50.61 105.99 53.66 105.99 56.14 104.56L91.44 84.18C93.91 82.75 95.44 80.11 95.44 77.25L95.44 36.49C95.44 33.63 93.91 30.99 91.44 29.56L56.14 9.18C53.66 7.75 50.61 7.75 48.14 9.18L12.83 29.56ZM14.83 33.03C13.6 33.74 12.83 35.06 12.83 36.49L12.83 77.25C12.83 78.68 13.6 80 14.83 80.71L50.14 101.1C51.37 101.81 52.9 101.81 54.14 101.1L89.44 80.71C90.67 80 91.44 78.68 91.44 77.25L91.44 36.49C91.44 35.06 90.67 33.74 89.44 33.03L54.14 12.64C52.9 11.93 51.37 11.93 50.14 12.64L14.83 33.03Z" fill="#8E35FF" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<g filter="url(#filter_846_34049_dd)">
+		<path id="Polygon 14" d="M50.14 18.03L19.5 35.71C18.26 36.43 17.5 37.75 17.5 39.18L17.5 74.56C17.5 75.99 18.26 77.31 19.5 78.03L50.14 95.71C51.37 96.43 52.9 96.43 54.14 95.71L84.78 78.03C86.01 77.31 86.78 75.99 86.78 74.56L86.78 39.18C86.78 37.75 86.01 36.43 84.78 35.71L54.14 18.03C52.9 17.31 51.37 17.31 50.14 18.03Z" fill="#FFFFFF" fill-opacity="0.500000" fill-rule="evenodd"/>
+		<path id="Polygon 14" d="M19.5 35.71C18.26 36.43 17.5 37.75 17.5 39.18L17.5 74.56C17.5 75.99 18.26 77.31 19.5 78.03L50.14 95.71C51.37 96.43 52.9 96.43 54.14 95.71L84.78 78.03C86.01 77.31 86.78 75.99 86.78 74.56L86.78 39.18C86.78 37.75 86.01 36.43 84.78 35.71L54.14 18.03C52.9 17.31 51.37 17.31 50.14 18.03L19.5 35.71ZM19 34.85C17.45 35.75 16.5 37.39 16.5 39.18L16.5 74.56C16.5 76.35 17.45 78 19 78.89L49.64 96.58C51.18 97.47 53.09 97.47 54.64 96.58L85.28 78.89C86.82 78 87.78 76.35 87.78 74.56L87.78 39.18C87.78 37.39 86.82 35.75 85.28 34.85L54.64 17.16C53.09 16.27 51.18 16.27 49.64 17.16L19 34.85Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+	<g style="mix-blend-mode:multiply">
+		<rect id="Frame" width="24.000000" height="24.000000" transform="translate(40.140625 44.875000)" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip846_34050)">
+			<path id="Vector" d="M46.87 61.89C45.64 60.82 44.77 59.39 44.38 57.82C43.98 56.24 44.07 54.58 44.65 53.06C45.22 51.53 46.25 50.22 47.58 49.29C48.92 48.37 50.51 47.87 52.14 47.87C53.76 47.87 55.35 48.37 56.69 49.29C58.03 50.22 59.05 51.53 59.62 53.06C60.2 54.58 60.29 56.24 59.89 57.82C59.5 59.39 58.63 60.82 57.41 61.89" stroke="#8E35FF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+			<path id="Vector" d="M45.72 65.28C46.1 65.66 46.6 65.87 47.14 65.87L57.14 65.87C57.67 65.87 58.17 65.66 58.55 65.28C58.92 64.91 59.14 64.4 59.14 63.87C59.14 63.34 58.92 62.83 58.55 62.46C58.17 62.08 57.67 61.87 57.14 61.87L47.14 61.87C46.6 61.87 46.1 62.08 45.72 62.46C45.35 62.83 45.14 63.34 45.14 63.87C45.14 64.4 45.35 64.91 45.72 65.28Z" stroke="#8E35FF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"/>
+			<path id="Vector" d="M51.14 51.87C50.34 51.87 49.58 52.18 49.01 52.75C48.45 53.31 48.14 54.07 48.14 54.87" stroke="#8E35FF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+		</g>
+	</g>
+</svg>

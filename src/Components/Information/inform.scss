@@ -1,0 +1,210 @@
+@import "../../Styles/mixin";
+
+.information {
+  @include flexbox(center, space-around);
+  flex-direction: column;
+  gap: 25px;
+  //   .first_section {
+  //     @include flexbox(space-between, center);
+  //     box-sizing: border-box;
+  //     border: 1px solid rgb(222, 227, 232);
+  //     background: rgb(255, 255, 255);
+  //     border-radius: 20px;
+  width: 950px;
+  //   }
+  .first_section {
+    @include flexbox(space-between, center);
+    div {
+      padding: 5px 20px;
+      box-sizing: border-box;
+
+      border: 1px solid rgb(222, 227, 232);
+      background: rgb(255, 255, 255);
+      border-radius: 20px;
+      width: 463px;
+      height: 100px;
+      @include flexbox(flex-start, center);
+      //   padding: 10px 25px;
+      gap: 20px;
+
+      section {
+        h1 {
+          color: rgb(25, 26, 38);
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: -1%;
+          text-align: left;
+        }
+        h2 {
+          color: rgb(25, 26, 38);
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: -1%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .second_section {
+    @include flexbox(center, flex-start);
+    flex-direction: column;
+    gap: 25px;
+    box-sizing: border-box;
+    border: 1px solid rgb(222, 227, 232);
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 950px;
+    height: 244px;
+    padding: 10px 30px;
+    section:first-child {
+      height: 50px;
+      @include flexbox(flex-start, center);
+      h1 {
+        color: rgb(25, 26, 38);
+        font-family: Roboto Flex;
+        font-size: 20px;
+        font-weight: 800;
+        // line-height: 50%;
+        letter-spacing: -1%;
+        text-align: left;
+        text-transform: uppercase;
+      }
+    }
+    section:nth-child(2),
+    section:nth-child(3) {
+      @include flexbox(space-between, center);
+      gap: 20px;
+      div {
+        width: 431px;
+        height: 48px;
+        h1 {
+          margin-top: 5px;
+          color: rgb(25, 26, 38);
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 700;
+          //   line-height: 24px;
+          letter-spacing: -1%;
+          text-align: left;
+        }
+        p {
+            margin: 0;
+          color: rgb(139, 142, 154);
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: -1%;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .third_section {
+    height: 156px;
+    box-sizing: border-box;
+    border: 1px solid rgb(222, 227, 232);
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 950px;
+    padding: 0 25px;
+
+    section:first-child {
+      height: 70px;
+      @include flexbox(flex-start, center);
+      h1 {
+        color: rgb(25, 26, 38);
+        font-family: Roboto Flex;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 100%;
+        letter-spacing: -1%;
+        text-align: left;
+        text-transform: uppercase;
+      }
+    }
+    section:nth-child(2) {
+      @include flexbox(flex-start, center);
+
+      div {
+        width: 431px;
+        height: 48px;
+        p {
+          color: rgb(139, 142, 154);
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: -1%;
+          text-align: left;
+        }
+        h1 {
+          color: rgb(25, 26, 38);
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: -1%;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .fourth_section {
+    @include flexbox(space-around, space-around);
+    flex-direction: column;
+    gap: 25px;
+    height: 238px;
+    box-sizing: border-box;
+    border: 1px solid rgb(222, 227, 232);
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 950px;
+    padding: 25px 25px;
+
+    div:first-child {
+      @include flexbox(space-between, center);
+      h1 {
+        color: rgb(25, 26, 38);
+        font-family: Roboto Flex;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 100%;
+        letter-spacing: -1%;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      h2 {
+        color: rgb(142, 53, 255);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: -1%;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+    div:nth-child(2) {
+      @include flexbox(space-around, center);
+      section {
+        @include flexbox(center, center);
+        flex-direction: column;
+        h1 {
+          color: rgb(25, 26, 38);
+          font-family: Roboto Flex;
+          font-size: 14px;
+          font-weight: 800;
+          line-height: 100%;
+          letter-spacing: -1%;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

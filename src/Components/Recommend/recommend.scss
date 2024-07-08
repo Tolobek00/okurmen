@@ -1,0 +1,159 @@
+@import "../../Styles/mixin";
+
+.recommend {
+  width: 100%;
+
+  @include respond-to-extra-large {
+    max-width: 1100px;
+  }
+  @include respond-to-large {
+    max-width: 768px;
+  }
+  @include respond-to-medium {
+    max-width: 700px;
+  }
+  @include respond-to-small {
+    max-width: 460px;
+    height: 690px;
+  }
+  .title {
+    width: 100%;
+    height: 150px;
+    @include flexbox(Flex-start, center);
+    h1 {
+      margin-top: 35px;
+
+      color: rgb(25, 26, 38);
+      font-family: Roboto Flex;
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 120%;
+      letter-spacing: -1%;
+      text-align: left;
+      text-transform: uppercase;
+
+      @include respond-to-small {
+        color: rgb(25, 26, 38);
+        font-family: Roboto Flex;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 120%;
+        letter-spacing: -1%;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .blogs {
+    @include flexbox(space-between, center);
+    height: 204px;
+
+    @include respond-to-medium {
+      flex-direction: column;
+    }
+
+    @include respond-to-small {
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    section {
+      width: 416px;
+      height: 204px;
+      box-sizing: border-box;
+      border: 1px solid rgb(222, 227, 232);
+      border-radius: 20px;
+      padding: 20px 0 20px 30px;
+      @include flexbox(space-between, Flex-start);
+      flex-direction: column;
+      cursor: pointer;
+      transition: 0.1s;
+
+      @include respond-to-small {
+        @include flexbox(space-between, Flex-start);
+        gap: 25px;
+        flex-direction: column;
+      }
+
+      background: rgb(255, 255, 255);
+      .nameUser {
+        @include flexbox(Flex-start, center);
+        gap: 15px;
+        h1 {
+          color: rgb(25, 26, 38);
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: -1%;
+          text-align: left;
+        }
+      }
+      .star {
+        @include flexbox(Flex-start, center);
+        gap: 10px;
+        margin-bottom: -20px;
+        img {
+          margin-bottom: 5px;
+        }
+        h3 {
+          color: rgb(139, 142, 154);
+          margin-left: -10px;
+        }
+        h3,
+        h2 {
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: -1%;
+          text-align: left;
+        }
+        div {
+          border-radius: 48px;
+          background: rgb(245, 248, 250);
+          width: 105px;
+          height: 32px;
+          transition: 0.9s;
+          @include flexbox(center, center);
+          h4 {
+            color: rgb(25, 26, 38);
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: -1%;
+            text-align: left;
+            margin-bottom: -1px;
+          }
+        }
+        div:hover {
+          background: radial-gradient(
+            115% 168% at 50% -52%,
+            rgb(243, 109, 255),
+            rgb(135, 69, 254) 60.5%,
+            rgb(23, 186, 229) 100%
+          );
+        }
+        div:hover h4 {
+          color: white;
+        }
+      }
+      .userName {
+        color: rgb(25, 26, 38);
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -1%;
+        text-align: left;
+      }
+    }
+    section:hover {
+      border-bottom: 1px solid rgb(23, 186, 229);
+      border-top: 1px solid rgb(135, 69, 254);
+      border-right: 1px solid rgb(135, 69, 254);
+      border-left: 1px solid rgb(243, 109, 255);
+    }
+  }
+}

@@ -1,0 +1,178 @@
+@import "../../Styles/mixin";
+
+.container1 {
+  margin-bottom: 50px;
+  // display: flex;
+  @include flexbox(center, center);
+  flex-direction: column;
+  .course {
+    margin-bottom: -80px;
+    display: flex;
+    gap: 30px;
+
+    .language-course {
+      background: url("../../Assets//image/Polygon\ full.png");
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 397px;
+      height: 452px;
+      // background-color: burlywood;
+      @include flexbox(center, center);
+      flex-direction: column;
+      gap: 5px;
+
+      img {
+        clip-path: polygon(
+          50% 0%,
+          100% 25%,
+          100% 75%,
+          50% 100%,
+          0% 75%,
+          0% 25%
+        );
+        object-fit: cover;
+      }
+
+      .section_flag {
+        clip-path: polygon(
+          50% 0%,
+          100% 25%,
+          100% 75%,
+          50% 100%,
+          0% 75%,
+          0% 25%
+        );
+        background: grey;
+        @include flexbox(center, center);
+        width: 82px;
+        height: 83px;
+        .flag-img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          background-repeat: no-repeat;
+          // margin-top: 15px;
+        }
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+      .name_avatar {
+        @include flexbox(space-between, center);
+        gap: 25px;
+
+        h1 {
+          color: rgb(25, 26, 38);
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: -1%;
+          text-align: left;
+        }
+        img {
+          width: 50px;
+          height: 60px;
+        }
+      }
+      .star {
+        @include flexbox(space-between, center);
+        gap: 10px;
+        height: 50px;
+
+        h1 {
+          color: rgb(25, 26, 38);
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 28px;
+          letter-spacing: -1%;
+          text-align: left;
+          margin-bottom: -1px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+          object-fit: cover;
+        }
+      }
+      .kviz {
+        @include flexbox(space-between, center);
+        gap: 10px;
+
+        section {
+          border-radius: 48px;
+          background: rgb(245, 248, 250);
+          padding: 0 15px 0 15px;
+          cursor: pointer;
+          h1 {
+            color: rgb(25, 26, 38);
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: -1%;
+            text-align: left;
+            margin-top: 5px;
+          }
+        }
+        .section:hover {
+          border: 1px solid rgb(135, 69, 254);
+        }
+        .grade {
+          @include flexbox(space-between, center);
+          gap: 5px;
+          background: none;
+          img {
+            margin-bottom: 1px;
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+      .paragraf {
+        width: 349px;
+        height: 36px;
+        p {
+          color: rgb(139, 142, 154);
+          font-family: Inter;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 18px;
+          letter-spacing: -1%;
+          text-align: center;
+        }
+      }
+      .categories {
+        @include flexbox(space-between, center);
+        gap: 15px;
+        section {
+          border-radius: 48px;
+          background: rgb(245, 248, 250);
+          border: 1px solid rgb(245, 248, 250);
+          padding: 5px 20px 5px 20px;
+          transition: 0.3s;
+          h1 {
+            margin-bottom: -1px;
+          }
+        }
+        section:hover {
+          border: 1px solid rgb(135, 69, 254);
+        }
+      }
+
+      .metal {
+        height: 100px;
+        @include flexbox(space-between, center);
+        gap: 10px;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}
