@@ -58,6 +58,11 @@ function Course() {
   }, []);
 
   const [activeComponent, setActiveComponent] = useState("HexLang");
+  const [selectedTitle, setSelectedTitle] = useState("");
+
+  function handleTitleClick(title) {
+    setSelectedTitle(title);
+  }
 
   return (
     <div className="course_language">
@@ -139,14 +144,13 @@ function Course() {
                 Языки
               </Accordion.Header>
               <Accordion.Body className="accordion">
-                <ul>
-                  <li>Русский</li>
-                  <li>Английский</li>
-                  <li>Немецкий</li>
-                  <li>Французский</li>
-                  <li>Китайский</li>
-                  <li>Японский</li>
-                </ul>
+                {category.map((item) => (
+                  <ul key={item.id}>
+                    <li onClick={() => handleTitleClick(item.title)}>
+                      {item.title}
+                    </li>
+                  </ul>
+                ))}
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1" className="item-bakground">
@@ -169,7 +173,9 @@ function Course() {
         </div>
         <div className="components">
           {activeComponent === "HexCourse" && <HexCourse />}
-          {activeComponent === "HexLang" && <HexLang />}
+          {activeComponent === "HexLang" && (
+            <HexLang selectedTitle={selectedTitle} />
+          )}
         </div>
       </div>
     </div>

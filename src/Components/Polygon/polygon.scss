@@ -1,8 +1,7 @@
 @import "../../Styles/mixin";
 
 .polygon-container {
-
-  background: rgba(25, 26, 38, 0.4), rgba(142, 53, 255, 0.3);
+  // background: rgba(25, 26, 38, 0.4), rgba(142, 53, 255, 0.3);
   backdrop-filter: blur(30px);
   @include flexbox(center, center);
   position: fixed;
@@ -15,8 +14,6 @@
     margin: 0 auto;
     height: 1000vh;
   }
-
-  
 
   .polygon {
     padding-top: 25px;
@@ -33,7 +30,7 @@
       width: 320px;
       height: 452px;
       top: 0;
-      left: 0
+      left: 0;
     }
 
     .avatar-name {

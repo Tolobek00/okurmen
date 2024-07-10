@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-
 import axios from "axios";
 import "./hexLang.scss";
 
 const API = "https://6631e134c51e14d69562ac29.mockapi.io/language";
 
-function HexLang() {
+function HexLang({ selectedTitle }) {
   const [category, setCategory] = useState([]);
 
   async function getLanguage() {
@@ -16,14 +15,17 @@ function HexLang() {
       console.log(error);
     }
   }
+
   useEffect(() => {
     getLanguage();
   }, []);
+  const filteredCategory = selectedTitle ? category.filter((item) => item.title === selectedTitle) : category;
+
   return (
     <div>
       <div className="language">
-        {category.map((item) => (
-          <div className="language-course">
+        {filteredCategory.map((item) => (
+          <div className="language-course" key={item.id}>
             <div className="kviz">
               <div className="kviz">
                 <img src={item.flags} alt="" className="flag-img" />

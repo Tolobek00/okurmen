@@ -28,14 +28,14 @@
     height: 250px;
     z-index: 3;
     &:first-child {
-      top: -50px;
+      top: -600px;
       left: 300px;
       animation: rain 20s linear infinite;
       animation-delay: 10s;
       // z-index: 0;
     }
     &:nth-child(2) {
-      top: -200px;
+      top: -700px;
       animation: rain2 10s linear infinite;
       animation-delay: 20s;
       right: 200px;
@@ -50,7 +50,7 @@
 
   @keyframes rain {
     0% {
-      top: -10px;
+      top: -800px;
       // opacity: 1;
     }
     50% {
@@ -63,7 +63,7 @@
   }
   @keyframes rain2 {
     0% {
-      top: -200px;
+      top: -400px;
       // opacity: 1;
     }
     50% {

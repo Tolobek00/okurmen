@@ -74,12 +74,7 @@ function Categories() {
   const rows = getRows(language, layoutPattern);
 
   return (
-    <div className="categories">
-      {/* <img src={crown} alt="" className="crown"/>
-      <img src={lang} alt="" className="lang"/>
-      <img src={game} alt="" />
-      <img src={provacation} alt="" />
-      <img src={voin} alt="" /> */}
+    <div className="categories_container">
       <div className="title_category">
         <h1>Категории</h1>
       </div>

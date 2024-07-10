@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className="home">
       <Banner />
-        <Hexagon />
+      <Hexagon />
       <Recommend />
       <Autors />
       <Reviews />

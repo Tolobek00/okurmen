@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { FaEye } from "react-icons/fa";
+
 
 import logo from "../../../Assets/image/okurmen_logo.jpg";
 import yarkima from "../../../Assets/Svg/Yarkima.svg";
